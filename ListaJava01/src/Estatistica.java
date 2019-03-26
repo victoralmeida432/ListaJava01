@@ -1,8 +1,16 @@
+import java.util.Scanner;
 
 public class Estatistica {
 	public int maiorValor;
 	
 	public Estatistica(int maiorValor) {
+		this.maiorValor = maiorValor;
+	}
+	
+	public int getMaiorValor() {
+		return maiorValor;
+	}
+	public void setMaiorValor(int val) {
 		this.maiorValor = maiorValor;
 	}
 	
@@ -54,9 +62,18 @@ public class Estatistica {
 			}
 		}
 	}
-	public static void main(String[] args) {
-		
+	 public static void main(String[] args) {
+	        
+	        Scanner sc = new Scanner(System.in);
+	        
+	        System.out.print("Digite um valor: ");
+	        int val = sc.nextInt();
+	        
+	        Estatistica est = new Estatistica(val);
+	        est.setMaiorValor(val);  
+	        
+	        sc.close();
 
-	}
+	    }
 
 }
