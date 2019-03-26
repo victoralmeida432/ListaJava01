@@ -16,8 +16,7 @@ public class Calculadora {
 	
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Digite a operação desejada");
-		
+
 		char operacao;
 		
 		Calculadora calcular = new Calculadora();
@@ -33,13 +32,13 @@ public class Calculadora {
 			System.out.println("Soma %n" + calcular.Somar(numero1, numero2));
 		}
 		else if(operacao == '-') {
-			System.out.println(calcular.Subtrair(numero1, numero2));
+			System.out.println("Subtração %n" + calcular.Subtrair(numero1, numero2));
 		}
 		else if(operacao == '*') {
-			System.out.println(calcular.Multiplicar(numero1, numero2));
+			System.out.println("Multiplicação %n" + calcular.Multiplicar(numero1, numero2));
 		}
 		else if(operacao == '/') {
-			System.out.println(calcular.Dividir(numero1, numero2));
+			System.out.println("Divisão %n" + calcular.Dividir(numero1, numero2));
 		}
 		else {
 			System.out.println("Erro, Operação incorreta.");
