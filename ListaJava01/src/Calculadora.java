@@ -20,7 +20,7 @@ public class Calculadora {
 		char operacao;
 		
 		Calculadora calcular = new Calculadora();
-		System.out.println("Digite a operação desejada");
+		System.out.println("Digite a operação desejada (+ ou - ou * ou /): ");
 		operacao = scan.next().charAt(0);
 		
 		System.out.println("Digite o primeiro número: ");
@@ -29,16 +29,16 @@ public class Calculadora {
 		double numero2 = scan.nextDouble();
 		
 		if(operacao == '+') {
-			System.out.println("Soma %n" + calcular.Somar(numero1, numero2));
+			System.out.println("Soma: \n" + calcular.Somar(numero1, numero2));
 		}
 		else if(operacao == '-') {
-			System.out.println("Subtração %n" + calcular.Subtrair(numero1, numero2));
+			System.out.println("Subtração: \n" + calcular.Subtrair(numero1, numero2));
 		}
 		else if(operacao == '*') {
-			System.out.println("Multiplicação %n" + calcular.Multiplicar(numero1, numero2));
+			System.out.println("Multiplicação: \n" + calcular.Multiplicar(numero1, numero2));
 		}
 		else if(operacao == '/') {
-			System.out.println("Divisão %n" + calcular.Dividir(numero1, numero2));
+			System.out.println("Divisão: \n" + calcular.Dividir(numero1, numero2));
 		}
 		else {
 			System.out.println("Erro, Operação incorreta.");
