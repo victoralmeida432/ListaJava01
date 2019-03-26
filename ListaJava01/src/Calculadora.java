@@ -16,18 +16,21 @@ public class Calculadora {
 	
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
+		System.out.println("Digite a operação desejada");
 		
-		double numero1, numero2;
 		char operacao;
 		
 		Calculadora calcular = new Calculadora();
+		System.out.println("Digite a operação desejada");
 		operacao = scan.next().charAt(0);
 		
-		numero1 = scan.nextDouble();
-		numero2 = scan.nextDouble();
+		System.out.println("Digite o primeiro número: ");
+		double numero1 = scan.nextDouble();
+		System.out.println("Digite o segundo número: ");
+		double numero2 = scan.nextDouble();
 		
 		if(operacao == '+') {
-			System.out.println(calcular.Somar(numero1, numero2));
+			System.out.println("Soma %n" + calcular.Somar(numero1, numero2));
 		}
 		else if(operacao == '-') {
 			System.out.println(calcular.Subtrair(numero1, numero2));
